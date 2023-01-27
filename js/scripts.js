@@ -12,18 +12,25 @@ function hideResults() {
   document.getElementByClassName("anime").setAttribute("class", "hidden");
 }
 
+function handleSelect(event) {
+  event.preventDefault();
+  const foodChoice = document.getElementByClassName("food").value;
+}
+
 window.addEventListener("load",function() {
   hideResults();
-  const favoriteColor = document.getElementByClassName("color").value;
-  const selection1 = document.getElementByClassName("food").value;
-  const selection2 = document.getElementByClassName("anime").value;
   const firstName = document.getElementClassName("first").value;
   const lastName = document.getElementByClassName("last").value;
+  const favoriteColor = document.getElementByClassName("color").value;
+  const foodChoice = document.getElementByClassName("food").value;
+  const animeChoice = document.getElementByClassName("anime").value;
 
 
   let form = document.querySelector("form");
   form.addEventListener("submit",function(event) {
     event.preventDefault();
+
+    document.getElementByClassName("food").addEventListener("submit", handleSelect);
     
   });
 });
