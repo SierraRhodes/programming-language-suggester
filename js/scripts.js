@@ -4,33 +4,50 @@
 
 
 //User Interface Logic 
-function hideResults() {
-  document.getElementsByClassName("first").setAttribute("class", "hidden");
-  document.getElementByClassName("last").setAttribute("class", "hidden");
-  document.getElementByClassName("color").setAttribute("class", "hidden");
-  document.getElementByClassName("food").setAttribute("class", "hidden");
-  document.getElementByClassName("anime").setAttribute("class", "hidden");
-}
+// function hideResults() {
+//   document.querySelector("span#person1a").innerText = person1Input;
+//     document.querySelector("span#person1b").innerText = person1Input;
+//     document.querySelector("span#person1c").innerText = person1Input;
+// };
 
 function handleSelect(event) {
-  event.preventDefault();
-  const foodChoice = document.getElementByClassName("food").value;
+  const foodChoice = document.getElementById("foodSelect").value;
+  const animeChoice = document.getElementById("animeSelect").value;
 }
 
 window.addEventListener("load",function() {
-  hideResults();
-  const firstName = document.getElementClassName("first").value;
-  const lastName = document.getElementByClassName("last").value;
-  const favoriteColor = document.getElementByClassName("color").value;
-  const foodChoice = document.getElementByClassName("food").value;
-  const animeChoice = document.getElementByClassName("anime").value;
+  // hideResults();
+  const firstName = document.getElementById("inputGroup-sizing-default1").value;
+  const lastName = document.getElementById("inputGroup-sizing-default2").value;
+  const favoriteColor = document.getElementById("exampleColorInput").value;
+  const foodChoice = document.getElementById("foodSelect").value;
+  const animeChoice = document.getElementById("animeSelect").value;
 
 
   let form = document.querySelector("form");
   form.addEventListener("submit",function(event) {
     event.preventDefault();
 
-    document.getElementByClassName("food").addEventListener("submit", handleSelect);
+    document.getElementById("foodSelect").addEventListener("submit", handleSelect);
+    document.getElementById("animeSelect").addEventListener("submit", handleSelect);
+
+    document.getElementById("results").removeAttribute("class");
+    document.getElementById("swift").removeAttribute("class");
+    document.getElementById("go").removeAttribute("class");
+    document.getElementById("python").removeAttribute("class");
+    document.getElementById("ruby").removeAttribute("class");
+
+
+    // if (programmingLanguage) {
+    //   if (tacos) {
+
+    //   } else if (lasagna) {
+
+    //   } else if (sushi) {
+
+    //   } else (pancakes)
+
+    // }
     
   });
 });
