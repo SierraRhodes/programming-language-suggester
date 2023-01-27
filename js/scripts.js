@@ -3,25 +3,27 @@
 
 
 
-//User Interface Logic 
-// function hideResults() {
-//   document.querySelector("span#person1a").innerText = person1Input;
-//     document.querySelector("span#person1b").innerText = person1Input;
-//     document.querySelector("span#person1c").innerText = person1Input;
-// };
+// User Interface Logic 
+function hideResults() {
+  let firstName = document.getElementById("inputGroup-sizing-default1").value;
+  let lastName = document.getElementById("inputGroup-sizing-default2").value;
+  let favoriteColor = document.getElementById("exampleColorInput").value;
+  let foodChoice = document.getElementById("foodSelect").value;
+  let animeChoice = document.getElementById("animeSelect").value;
+};
 
 function handleSelect(event) {
-  const foodChoice = document.getElementById("foodSelect").value;
-  const animeChoice = document.getElementById("animeSelect").value;
+  let foodChoice = document.getElementById("foodSelect").value;
+  let animeChoice = document.getElementById("animeSelect").value;
 }
 
 window.addEventListener("load",function() {
-  // hideResults();
-  const firstName = document.getElementById("inputGroup-sizing-default1").value;
-  const lastName = document.getElementById("inputGroup-sizing-default2").value;
-  const favoriteColor = document.getElementById("exampleColorInput").value;
-  const foodChoice = document.getElementById("foodSelect").value;
-  const animeChoice = document.getElementById("animeSelect").value;
+  hideResults();
+  let firstName = document.getElementById("inputGroup-sizing-default1").value;
+  let lastName = document.getElementById("inputGroup-sizing-default2").value;
+  let favoriteColor = document.getElementById("exampleColorInput").value;
+  let foodChoice = document.getElementById("foodSelect").value;
+  let animeChoice = document.getElementById("animeSelect").value;
 
 
   let form = document.querySelector("form");
@@ -32,22 +34,16 @@ window.addEventListener("load",function() {
     document.getElementById("animeSelect").addEventListener("submit", handleSelect);
 
     document.getElementById("results").removeAttribute("class");
-    document.getElementById("swift").removeAttribute("class");
-    document.getElementById("go").removeAttribute("class");
-    document.getElementById("python").removeAttribute("class");
-    document.getElementById("ruby").removeAttribute("class");
 
-
-    // if (programmingLanguage) {
-    //   if (tacos) {
-
-    //   } else if (lasagna) {
-
-    //   } else if (sushi) {
-
-    //   } else (pancakes)
-
-    // }
-    
+    if (foodChoice) {
+      if (foodChoice = "pancake") {
+        document.getElementById("swift").removeAttribute("class");
+      } else if (foodChoice = "lasagna") {
+        document.getElementById("go").removeAttribute("class");
+      } else if (foodChoice = "sushi") {
+        document.getElementById("python").removeAttribute("class");
+      } else if (foodChoice = "tacos")
+        document.getElementById("ruby").removeAttribute("class");
+       }
   });
 });
