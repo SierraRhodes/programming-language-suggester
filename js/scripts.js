@@ -35,14 +35,14 @@ window.addEventListener("load",function() {
 
     document.getElementById("results").removeAttribute("class");
 
-    if (foodChoice) {
-      if (foodChoice = "pancake") {
+    if (results) {
+      if (foodChoice === "Pancakes") {
         document.getElementById("swift").removeAttribute("class");
-      } else if (foodChoice = "lasagna") {
+      } else if (foodChoice === "Lasagna") {
         document.getElementById("go").removeAttribute("class");
-      } else if (foodChoice = "sushi") {
+      } else if (foodChoice === "Sushi") {
         document.getElementById("python").removeAttribute("class");
-      } else if (foodChoice = "tacos")
+      } else if (foodChoice === "Tacos")
         document.getElementById("ruby").removeAttribute("class");
        }
   });
