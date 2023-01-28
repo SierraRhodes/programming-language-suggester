@@ -1,15 +1,48 @@
 .title {
   text-align: center;
+
 }
 
 .hidden {
   display: none; 
+
 }
 
 .hide {
   display: none;
+
 }
 
-/* body {
+body {
   background-color: black;
-} */
+  /* color: white; */
+}
+
+.iceberg {
+  border: 20px solid black;
+  height: 400px;
+  margin:0 auto;
+  padding:20px 0;
+  width: 400px;
+
+}
+
+.card {
+  border: 20px solid black; 
+  margin:0 auto;
+  padding:20px 0;
+  width:800px;
+
+}
+
+.languageHeading {
+margin-top: 300px;
+}
+
+.assessment {
+  /* margin-bottom: 200px; */
+}
+
+#questions {
+  /* margin-top: 200px; */
+}
