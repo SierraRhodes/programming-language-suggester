@@ -23,12 +23,12 @@
       <p>
         <img src="img/programming.jpg" alt="A picture of an iceberg with programming languaged inside it." class="iceberg"></a>
       </p>
-      <p>
-        But wait! There is more. Keep scrolling and take our assessment to see which of the four selected programming languages would suit you best. 
-      </p>
       <div class="scroll">
         <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Which language do you think will suit you best?">Keep Scrolling</button>
       </div>
+      <p class="info">
+        Take our assessment to see which of the four selected programming languages, on the left, would suit you best. Check them out on your way down. 
+      </p>
     </div>
     <div class="col align-self-center">
       <h4 class="languageHeading">Languages of Interest</h4>
@@ -68,9 +68,10 @@
           <a href="https://www.ruby-lang.org/en/" class="btn btn-primary">Learn More</a>
         </div>
       </div>
-
-    </div>
-    <div class="col align-self-end">
+      <div>
+      </div>
+    </div class="right">
+    <div class="col align-self-end" id="questions">
       <h1 class="assessment">Quick Assessment</h1>
       <p>
         Question 1: What is your first name?
@@ -126,7 +127,7 @@
      </div>
    </div>
   </div>
-  <button type="submit" class="btn btn-outline-primary">Submit!</button>
+  <button type="submit" class="btn btn-outline-primary" id="submission">Submit!</button>
  </form>
  <div id="results" class="hidden">Results Are In! You'll excel in:
  </div>

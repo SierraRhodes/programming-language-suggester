@@ -13,10 +13,10 @@
 
 }
 
-body {
-  background-color: black;
-  /* color: white; */
-}
+/* body {
+  background-color: black; 
+  color: white;
+} */
 
 .iceberg {
   border: 20px solid black;
@@ -40,9 +40,23 @@ margin-top: 300px;
 }
 
 .assessment {
-  /* margin-bottom: 200px; */
+  margin-top: 200px;
 }
 
-#questions {
-  /* margin-top: 200px; */
+.right {
+  background-image: red;
+}
+
+#submission {
+  float: right;
+  margin-right: 17%;
+}
+
+.scroll {
+margin-top: 200px;
+
+}
+
+.info {
+  margin-top: 50px;
 }
