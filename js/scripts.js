@@ -4,14 +4,16 @@
 
 //User Interface Logic
 function hideResults() {
+document.getElementById("swift").setAttribute("class", "hide");
+document.getElementById("python").setAttribute("class", "hide");
+document.getElementById("go").setAttribute("class", "hide");
+document.getElementById("ruby").setAttribute("class", "hide");
+}
+
+function handleSelect(event) {
   let firstName = document.getElementById("inputGroup-sizing-default1").value;
   let lastName = document.getElementById("inputGroup-sizing-default2").value;
   let favoriteColor = document.getElementById("exampleColorInput").value;
-  let foodChoice = document.getElementById("foodSelect").value;
-  let animeChoice = document.getElementById("animeSelect").value;
-};
-
-function handleSelect(event) {
   let foodChoice = document.getElementById("foodSelect").value;
   let animeChoice = document.getElementById("animeSelect").value;
 }
@@ -23,7 +25,7 @@ window.addEventListener("load",function() {
   form.addEventListener("submit",function(event) {
     event.preventDefault();
 
-    document.getElementById("foodSelect").addEventListener("submit", (event));
+    document.getElementById("foodSelect").addEventListener("submit", handleSelect);
     document.getElementById("animeSelect").addEventListener("submit", handleSelect);
 
 
@@ -32,6 +34,7 @@ window.addEventListener("load",function() {
 
     console.log("Is form resetting=", document.getElementById("program").reset())
     document.getElementById("program").reset();
+
 
     if (foodChoice === "Pancakes") { 
       document.getElementById("swift").removeAttribute("class");
