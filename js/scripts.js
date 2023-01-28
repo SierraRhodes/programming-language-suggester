@@ -24,6 +24,7 @@ window.addEventListener("load",function() {
   let form = document.querySelector("form");
   form.addEventListener("submit",function(event) {
     event.preventDefault();
+    hideResults();
 
     document.getElementById("foodSelect").addEventListener("submit", handleSelect);
     document.getElementById("animeSelect").addEventListener("submit", handleSelect);
