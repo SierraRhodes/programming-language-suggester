@@ -5,6 +5,7 @@
 
 .hidden {
   display: none; 
+  font-size: large;
 
 }
 
@@ -13,10 +14,11 @@
 
 }
 
-/* body {
-  background-color: black; 
-  color: white;
-} */
+body {
+  /* background-image: url("../../img/background2.png"); */
+  background-image: url("../../img/computer-chip.png");
+  background-color: black;
+}
 
 .iceberg {
   border: 20px solid black;
@@ -30,8 +32,8 @@
 .card {
   border: 20px solid black; 
   margin:0 auto;
-  padding:20px 0;
-  width:800px;
+  padding: 20px 0;
+  width: 400px;
 
 }
 
