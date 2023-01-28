@@ -22,15 +22,16 @@ window.addEventListener("load",function() {
   let form = document.querySelector("form");
   form.addEventListener("submit",function(event) {
     event.preventDefault();
-    let foodChoice = document.getElementById("foodSelect").value;
 
     document.getElementById("foodSelect").addEventListener("submit", (event));
     document.getElementById("animeSelect").addEventListener("submit", handleSelect);
 
-    document.getElementById("results").removeAttribute("class");
-    document.getElementById("swift").removeAttribute("class");
-    
+
+    let foodChoice = document.getElementById("foodSelect").value;
     console.log("Correctly giving back right values?=", document.getElementById("foodSelect").value);
+
+    console.log("Is form resetting=", document.getElementById("program").reset())
+    document.getElementById("program").reset();
 
     if (foodChoice === "Pancakes") { 
       document.getElementById("swift").removeAttribute("class");
@@ -41,17 +42,5 @@ window.addEventListener("load",function() {
     } else {
       document.getElementById("ruby").removeAttribute("class");
     }
-
-      // if (foodChoice === "Pancakes") {
-      //   document.getElementById("swift").removeAttribute("class");
-      // } else if (foodChoice === "Lasagna") {
-      //   document.getElementById("go").removeAttribute("class");
-      // } else if (foodChoice === "Sushi") {
-      //   document.getElementById("python").removeAttribute("class");
-      // } 
-      
-      // else (foodChoice === "Tacos") 
-      //   document.getElementById("ruby").removeAttribute("class");
-      
   });
 });
