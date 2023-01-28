@@ -31,9 +31,7 @@ window.addEventListener("load",function() {
 
 
     let foodChoice = document.getElementById("foodSelect").value;
-    console.log("Correctly giving back right values?=", document.getElementById("foodSelect").value);
 
-    console.log("Is form resetting=", document.getElementById("program").reset())
     document.getElementById("program").reset();
 
 
