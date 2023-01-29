@@ -27,9 +27,11 @@
       <div class="scroll">
         <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Which language do you think will suit you best?">Keep Scrolling</button>
       </div>
-      <p class="info">
-        Take our assessment to see which of the four selected programming languages, on the left, would suit you best. Check them out on your way down. 
-      </p>
+      <div>
+        <p class="scrollInfo">
+          Take our assessment to see which of the four selected programming languages, on the right, would suit you best. Check them out on your way down. 
+        </p>
+      </div>
     </div>
     <div class="col align-self-center">
       <h4 class="languageHeading">Languages of Interest</h4>
@@ -74,7 +76,7 @@
     </div class="right">
     <div class="col align-self-end" id="questions">
       <h1 class="assessment">Quick Assessment</h1>
-      <p>
+      <p class="questions">
         Question 1: What is your first name?
       </p>
       <p>
@@ -83,7 +85,7 @@
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
       </p>
-      <p>
+      <p class="questions">
         Question 2: What is your last name?
       </p>
       <p>
@@ -92,18 +94,18 @@
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
       </p>
-      <p>
+      <p class="questions">
         Question 3: What is your favorite color? 
       </p>
       <p>
         <label for="exampleColorInput" class="form-label color hidden">Color picker</label>
         <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
       </p>
-      <p>
+      <p class="questions">
         Question 4: Which one is your favorite food? 
       </p>
-      <p>
-        <h4>Choose Wisely</h4>
+      <p class="answers">
+        <h4 class="foodTitle">Choose Wisely</h4>
         <select class="form-select food" id="foodSelect" aria-label="Default select example">
           <option selected>Select</option>
           <option value="Pancakes">Pancakes</option>
@@ -112,11 +114,11 @@
           <option value="Tacos">Tacos</option>
         </select>
       </p>
-      <p>
+      <p class="questions">
         Question 5: What is your favorite anime from this selection?
       </p>
-      <p>
-        <h4>I Won't Peek</h4>
+      <p class="answers">
+        <h4 class="animeTitle">I Won't Peek</h4>
         <select class="form-select anime" id="animeSelect" aria-label="Default select example">
           <option selected>Select</option>
           <option>Pokémon</option>
@@ -135,18 +137,20 @@
  </div>
  <div id="ruby" class="hide">
   <h1>Ruby</h1>
-  <p>Oh! Look at the shiny!</p> 
+  <h4>Oh! Look at the shiny!</h4>
+  </p> 
 </div>
 <div id="python" class="hide">
   <h1>Python</h1>
-  <p>Welcome, fellow Slytherin! You are in good company!</p> 
+  <h4>Welcome, fellow Slytherin! You are in good company!</h4>
 </div>
 <div id="go" class="hide">
   <h1>Go</h1>
-  <p>Run, run as fast you can. No one can catch you, you're the gingerbread man!</p> 
+  <h4>Run, run as fast you can. No one can catch you, you're the gingerbread man!</h4>
+  
 </div>
 <div id="swift" class="hide">
   <h1>Swift</h1>
-  <p>You may be fast, but you're not as fast as Go!</p> 
+  <h4>You may be fast, but you're not as fast as Go!</h4>
 </body>
 </html>

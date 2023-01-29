@@ -12,11 +12,7 @@ document.getElementById("results").setAttribute("class","hidden");
 }
 
 function handleSelect(event) {
-  let firstName = document.getElementById("inputGroup-sizing-default1").value;
-  let lastName = document.getElementById("inputGroup-sizing-default2").value;
-  let favoriteColor = document.getElementById("exampleColorInput").value;
   let foodChoice = document.getElementById("foodSelect").value;
-  let animeChoice = document.getElementById("animeSelect").value;
 }
 
 window.addEventListener("load",function() {
@@ -27,11 +23,8 @@ window.addEventListener("load",function() {
     event.preventDefault();
     hideResults();
 
-    document.getElementById("foodSelect").addEventListener("submit", handleSelect);
-    document.getElementById("animeSelect").addEventListener("submit", handleSelect);
-
-
     let foodChoice = document.getElementById("foodSelect").value;
+    document.getElementById("foodSelect").addEventListener("submit", handleSelect);
 
     document.getElementById("program").reset();
 
