@@ -8,12 +8,14 @@
 .hidden, .hide {
   display: none;
   font-size: 40px;
+  color: whitesmoke;
 
 }
 
 body {
   background-color: black;
   background-image: url("../img/computer-chip.png");
+  color: whitesmoke;
 }
 
 .iceberg {
@@ -29,6 +31,7 @@ body {
   margin:0 auto;
   padding: 20px 0;
   width: 400px;
+  color: black;
 
 }
 
